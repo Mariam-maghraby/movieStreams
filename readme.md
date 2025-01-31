@@ -52,53 +52,55 @@ This application is a full-stack movie search and favorites management system th
 Install dependencies:
 
 
+```
 npm install
+```
 Start the development server:
 
-bash
-Copy
-Edit
+```
 npm run dev
-Backend (NestJS)
+```
+
+### Backend (NestJS)
 Clone the backend repository:
 
-bash
-Copy
-Edit
+```
 git clone https://github.com/your-repo/movie-app-backend.git
+
 cd movie-app-backend
+```
 Install dependencies:
 
-bash
-Copy
-Edit
+```
 npm install
+```
 Setup the database:
 
 Ensure you have PostgreSQL installed and running.
 Update the .env file with your PostgreSQL credentials.
 Run database migrations:
 
-bash
-Copy
-Edit
+```
 npm run migrate
+```
 Start the backend server:
 
-bash
-Copy
-Edit
 npm run start:dev
 Environment Variables
-Create a .env file in the backend root with the following variables:
-makefile
+Create a .env file in the backend root as .env.exmaple
 
 ### Backend
+```
 DATABASE_URL=your_postgresql_database_url
 OMDB_API_KEY=your_omdb_api_key
+
+PORT=8000
+```
 API Endpoints
+```
 GET /movies/search?q={query} - Search for movies based on the query.
 POST /favorites - Add a movie to the favorites list.
 GET /favorites - Retrieve all favorite movies.
 PUT /favorites/{id} - Update a favorite movie's details.
 DELETE /favorites/{id} - 
+```
